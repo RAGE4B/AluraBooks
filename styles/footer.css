@@ -4,3 +4,43 @@
 hr{
     margin: 0;
 }
+
+.rodape__lista{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape__lista{
+        display: block;
+    }
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--branco-2);
+        padding: 4em 0;
+
+    }
+
+    .lista--item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista--link{
+        margin-left: 0.5em;
+        color: var(--cinza);
+        text-decoration: none;
+    }
+
+    .lista--titulo{
+        font-size: 14px;
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+        margin-bottom: 2em
+    }
+
+    .rodape__titulo{
+        font-size: 24px;
+    }
+}
