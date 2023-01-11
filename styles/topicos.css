@@ -17,6 +17,7 @@
 }
 .topicos__item{
     margin: 2em 0.5em;
+    transition: 0.3s ease;
 }
 
 .topicos__link{
@@ -26,6 +27,7 @@
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
+    transition: 0.3s ease;
 }
 
 @media screen and (min-width: 1024px){
@@ -44,4 +46,23 @@
     .topicos__lista{
         margin: 0 2em;
     }
+
+    .topicos__link:hover{
+        background-color: var(--branco);
+        color: var(--laranja);
+        transition: 0.3s ease;
+    }
+    .topicos__item:hover{
+        transform: scale(1.1);
+        transition: 0.5s ease;
+        
+    }
+}
+
+@media screen and (min-width: 1728px){
+
+    .topicos{
+        padding: 1em 25vw 4em 25vw;
+    }
+
 }

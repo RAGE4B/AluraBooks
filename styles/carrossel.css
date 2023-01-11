@@ -75,6 +75,7 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
+    transition: 0.3s ease;
 }
 .imagem__descricao{
     width: 146px;
@@ -110,4 +111,50 @@
         width: 50%;
     }
 
+    .card__ancora:active{
+        background: var(--azul-gradiente);
+    }
+    .card__ancora:hover{
+        transform: scale(1.2);
+        background-color: var(--branco);
+        color: var(--laranja);
+        border: 3px solid var(--laranja);
+        transition: 0.3s linear;
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+
+    .carrossel__titulo{
+        padding: 1.5em 0 0.5em 0;
+    }
+
+    .container__carrossel{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination{
+        padding: 0.5em 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .descricao{
+        width: 70%;
+    }
+
+    .titulo__descricao{
+        font-size: 32px;
+
+    }
+
+    .card{
+        width: 60%;
+        margin-left: 3em;
+    }
 }
